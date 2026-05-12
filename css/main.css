@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap");
 
 *,
 *::before,
@@ -11,9 +11,9 @@ html {
 
 body {
   margin: 0;
-  background: #ffffff;
-
-  color: #ffffff;
+  background: #1d0d3d;
+  font-family: "M PLUS 1 Code", monospace;
+  color: #ebfefe;
 }
 
 h1,
@@ -60,17 +60,17 @@ a {
   scale: 120%;
 }
 
-.o-b-header.is-open .o-b-header-background {
+.p-w-header.is-open .p-w-header-background {
   left: 0;
 }
-.o-b-header-button-wrapper {
+.p-w-header-button-wrapper {
   margin-left: auto;
 }
-.o-b-header-icon {
+.p-w-header-icon {
   display: none;
 }
 
-.o-b-header-icon-button {
+.p-w-header-icon-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,22 +78,22 @@ a {
   border: none;
   border-radius: 50%;
 }
-.o-b-navigation-list.is-open {
+.p-w-navigation-list.is-open {
   right: 0;
 }
-.o-b-header-icon-menu {
+.p-w-header-icon-menu {
   display: block;
 }
 
-.o-b-header-icon-button.is-open .o-b-header-icon-menu {
+.p-w-header-icon-button.is-open .p-w-header-icon-menu {
   display: none;
 }
 
-.o-b-header-icon-button.is-open .o-b-header-icon-close {
+.p-w-header-icon-button.is-open .p-w-header-icon-close {
   display: block;
 }
 
-.o-b-header {
+.p-w-header {
   position: fixed;
   width: 100%;
   z-index: 5;
@@ -101,10 +101,10 @@ a {
   background: transparent;
   display: flex;
   height: 80px;
-  background: #ffffff;
+  background: #1d0d3d;
 }
 
-.o-b-header-background {
+.p-w-header-background {
   position: absolute;
   top: 0;
   right: 0;
@@ -112,31 +112,31 @@ a {
   left: 100%;
   z-index: -1;
   transition: left 0.3s ease;
-  background: #ffffff;
+  background: #1d0d3d;
 }
-.o-b-header.is-open .o-b-header-background {
+.p-w-header.is-open .p-w-header-background {
   left: 0;
 }
-.o-b-header-button-wrapper {
+.p-w-header-button-wrapper {
   margin-right: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.o-b-header-icon-menu {
+.p-w-header-icon-menu {
   display: block;
 }
 
-.o-b-header-icon-button.is-open .o-b-header-icon-menu {
+.p-w-header-icon-button.is-open .p-w-header-icon-menu {
   display: none;
 }
 
-.o-b-header-icon-button.is-open .o-b-header-icon-close {
+.p-w-header-icon-button.is-open .p-w-header-icon-close {
   display: block;
 }
 
-.o-b-navigation {
+.p-w-navigation {
   display: -ms-flexbox;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -148,11 +148,11 @@ a {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 10px 16px;
+  padding: 8px 16px;
   position: relative;
 }
 
-.o-b-navigation-list {
+.p-w-navigation-list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -167,55 +167,54 @@ a {
   border-radius: 16px;
 
   padding-top: 16px;
-  padding-bottom: 16px;
+  padding-bottom: 36px;
 
   gap: 28px;
-  background: #ffffff;
+  background: #1d0d3d;
 }
 
-.o-b-navigation-list.is-open {
+.p-w-navigation-list.is-open {
   right: 0;
 }
 
-.o-b-navigation-link {
+.p-w-navigation-link {
   transition: all 0.3s ease-in-out;
   text-decoration: none;
-  color: #2d0d0b;
-  font-family: Maven Pro;
+  color: #ebfefe;
+  font-family: M PLUS 1 Code;
   font-weight: 500;
   font-style: Medium;
   font-size: 24px;
   leading-trim: NONE;
   line-height: 130%;
   letter-spacing: 0%;
-  padding: 12px 0;
 }
 
-.o-b-navigation-link:hover,
-.o-b-navigatioт-link:focus {
-  color: #fedc82;
+.p-w-navigation-link:hover,
+.p-w-navigatioт-link:focus {
+  color: #469dff;
 }
 
-.o-b-header.is-open {
+.p-w-header.is-open {
   background-color: transparent;
 }
 
-.o-b-navigation-img {
+.p-w-navigation-img {
   display: none;
 }
 
-@media screen and (min-width: 1203px) {
-  .o-b-navigation-img {
+@media screen and (min-width: 1208px) {
+  .p-w-navigation-img {
     display: block;
-    margin-right: 610px;
+    margin-right: 690px;
   }
-  .o-b-policy-terms-header-icon-menu {
+  .p-w-policy-terms-header-icon-menu {
     display: none;
   }
-  .o-b-header-button-wrapper {
+  .p-w-header-button-wrapper {
     display: none;
   }
-  .o-b-header {
+  .p-w-header {
     width: 100%;
     height: 60px;
     padding: 0;
@@ -225,10 +224,10 @@ a {
     z-index: 1000;
   }
 
-  .o-b-header-icon-button {
+  .p-w-header-icon-button {
     display: none;
   }
-  .o-b-navigation {
+  .p-w-navigation {
     display: flex;
     flex-direction: row;
     flex: 1;
@@ -238,7 +237,7 @@ a {
     margin: auto;
   }
 
-  .o-b-navigation-list {
+  .p-w-navigation-list {
     background-color: transparent;
     flex-direction: row;
     display: flex;
@@ -247,7 +246,7 @@ a {
     margin: auto;
     padding-block: 0;
     flex: 1;
-    gap: 30px;
+    gap: 36px;
     height: 0px;
     display: flex;
     justify-content: center;
@@ -256,220 +255,215 @@ a {
     padding: 0;
   }
 
-  .o-b-navigation-link {
-    font-family: Maven Pro;
+  .p-w-navigation-link {
+    font-family: M PLUS 1 Code;
     font-weight: 400;
     font-style: Regular;
     font-size: 18px;
     leading-trim: NONE;
     line-height: 150%;
     letter-spacing: 0%;
-    padding: 0;
   }
 
-  .o-b-navigation-item-desk {
+  .p-w-navigation-item-desk {
     display: none;
   }
 }
 
-.o-b-home {
-  background: #620c08;
-
+.p-w-home {
   margin: auto;
 }
-.o-b-home-container {
+.p-w-home-container {
   width: 375px;
   height: 812px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-image: url("/img/Hero.png");
-  padding: 319px 16px 0px;
+  padding: 100px 16px 0px;
   margin: auto;
 }
 
-.o-b-home-title {
-  font-family: Maven Pro;
-  font-weight: 900;
-  font-style: Black;
-  font-size: 56px;
+.p-w-home-title {
+  font-family: M PLUS 1 Code;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 48px;
   leading-trim: NONE;
   line-height: 120%;
   letter-spacing: 0%;
-  color: #fedc82;
 }
 
-.o-b-home-text {
-  font-family: Maven Pro;
+.p-w-home-text {
+  font-family: M PLUS 1 Code;
   font-weight: 500;
   font-style: Medium;
   font-size: 24px;
   leading-trim: NONE;
   line-height: 130%;
   letter-spacing: 0%;
-  padding: 16px 0 48px;
+
+  padding: 16px 0 64px;
 }
-.o-b-home-text-two {
-  font-family: Maven Pro;
+.p-w-home-text-two {
+  font-family: M PLUS 1 Code;
   font-weight: 400;
   font-style: Regular;
   font-size: 16px;
   leading-trim: NONE;
   line-height: 150%;
   letter-spacing: 0%;
-  padding-bottom: 32px;
+
+  padding-bottom: 240px;
 }
-.o-b-home-link {
+.p-w-home-link {
   width: 180px;
   margin: auto;
   transition: all 0.3s ease-in-out;
 }
 
-.o-b-home-link:hover {
+.p-w-home-link:hover {
   transform: scale(1.1);
 }
 
-@media screen and (min-width: 1203px) {
-  .o-b-home {
-    background: #620c08;
-    width: auto;
-    height: 695px;
+@media screen and (min-width: 1208px) {
+  .p-w-home {
+    width: 100%;
+    background-image: url("/img/Hero (1).png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("/img/Hero\ \(1\).png");
-    margin: auto;
-  }
-  .o-b-home-container {
-    width: 1440px;
-    height: 695px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: none;
-    padding: 150px 736px 0px 160px;
-    margin: auto;
   }
 
-  .o-b-home-title {
-    font-family: Maven Pro;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 88px;
+  .p-w-home-container {
+    max-width: 1440px;
+    height: 712px;
+    width: 1440px;
+    margin: 0 auto;
+    padding: 120px 160px;
+    background-image: url("/img/Hero (2).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .p-w-home-title {
+    font-family: M PLUS 1 Code;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 96px;
     leading-trim: NONE;
     line-height: 120%;
     letter-spacing: 0%;
   }
 
-  .o-b-home-text {
-    font-family: Maven Pro;
+  .p-w-home-text {
+    font-family: M PLUS 1 Code;
     font-weight: 500;
     font-style: Medium;
     font-size: 28px;
     leading-trim: NONE;
     line-height: 130%;
     letter-spacing: 0%;
-
-    padding: 0px 0 61px;
+    width: 544px;
+    padding: 16px 0 96px;
   }
-  .o-b-home-text-two {
-    font-family: Maven Pro;
+  .p-w-home-text-two {
+    font-family: M PLUS 1 Code;
     font-weight: 400;
     font-style: Regular;
     font-size: 18px;
     leading-trim: NONE;
     line-height: 150%;
     letter-spacing: 0%;
-
-    padding-bottom: 45px;
+    width: 544px;
+    padding-bottom: 48px;
   }
-  .o-b-home-link {
-    width: 180px;
+  .p-w-home-link {
     margin: 0;
     transition: all 0.3s ease-in-out;
   }
 }
-.o-b-about {
+.p-w-about {
   margin: auto;
   width: 375px;
-  height: 1078px;
+  height: 1119px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-image: url("/img/Features.png");
 }
-.o-b-about-container {
+.p-w-about-container {
   width: 375px;
   padding: 60px 16px 0px;
   margin: auto;
 }
-.o-b-about-title {
-  font-family: Maven Pro;
-  font-weight: 700;
-  font-style: Bold;
+.p-w-about-title {
+  font-family: M PLUS 1 Code;
+  font-weight: 600;
+  font-style: SemiBold;
   font-size: 36px;
   leading-trim: NONE;
   line-height: 120%;
   letter-spacing: 0%;
-  color: #ff7f00;
 }
-.o-b-about-list {
+.p-w-about-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
   padding-top: 48px;
 }
-.o-b-about-text {
-  font-family: Maven Pro;
+.p-w-about-text {
+  font-family: M PLUS 1 Code;
   font-weight: 500;
   font-style: Medium;
   font-size: 18px;
   leading-trim: NONE;
   line-height: 150%;
   letter-spacing: 0%;
-  color: #620c08;
+
+  color: #469dff;
 }
 
-.o-b-about-text-bold {
-  font-family: Maven Pro;
+.p-w-about-text-bold {
+  font-family: M PLUS 1 Code;
   font-weight: 400;
   font-style: Regular;
   font-size: 16px;
   leading-trim: NONE;
   line-height: 150%;
   letter-spacing: 0%;
-  color: #2d0d0b;
+
   padding-top: 8px;
 }
 
-@media screen and (min-width: 1203px) {
-  .o-b-about {
+@media screen and (min-width: 1208px) {
+  .p-w-about {
     width: 1440px;
-    height: 814px;
+    height: 812px;
     background-image: url("/img/Features\ \(1\).png");
   }
-  .o-b-about-container {
+  .p-w-about-container {
     width: 1440px;
     padding: 80px 160px;
   }
-  .o-b-about-title {
-    font-family: Maven Pro;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 48px;
+  .p-w-about-title {
+    font-family: M PLUS 1 Code;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 56px;
     leading-trim: NONE;
     line-height: 120%;
     letter-spacing: 0%;
   }
-  .o-b-about-list {
+  .p-w-about-list {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    padding-top: 48px;
+    padding-top: 64px;
     width: 544px;
   }
-  .o-b-about-text {
-    font-family: Maven Pro;
+  .p-w-about-text {
     font-weight: 500;
     font-style: Medium;
     font-size: 20px;
@@ -478,8 +472,7 @@ a {
     letter-spacing: 0%;
   }
 
-  .o-b-about-text-bold {
-    font-family: Maven Pro;
+  .p-w-about-text-bold {
     font-weight: 400;
     font-style: Regular;
     font-size: 18px;
@@ -491,48 +484,40 @@ a {
   }
 }
 
-.o-b-why-container {
+.p-w-why-container {
   width: 375px;
+  height: 771px;
   margin: auto;
   padding: 60px 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/How\ It\ Works.png");
 }
-.o-b-why-list {
+.p-w-why-list {
   padding-top: 48px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
 }
-.o-b-why-item {
+.p-w-why-item {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  width: 343px;
-  height: 289px;
-  border-radius: 16px;
-  padding: 32px;
 }
 
-.o-b-why-text-bold {
-  font-family: Maven Pro;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: 88px;
-  leading-trim: NONE;
-  line-height: 120%;
-  letter-spacing: 0%;
-  color: #fedc82;
-}
-.o-b-why-text {
-  font-family: Maven Pro;
+.p-w-why-text-bold {
+  font-family: M PLUS 1 Code;
   font-weight: 500;
   font-style: Medium;
-  font-size: 24px;
+  font-size: 18px;
   leading-trim: NONE;
-  line-height: 130%;
+  line-height: 150%;
   letter-spacing: 0%;
+  color: #469dff;
 }
-.o-b-why-text-two {
-  font-family: Maven Pro;
+.p-w-why-text {
+  font-family: M PLUS 1 Code;
   font-weight: 400;
   font-style: Regular;
   font-size: 16px;
@@ -541,188 +526,173 @@ a {
   letter-spacing: 0%;
 }
 
-@media screen and (min-width: 1203px) {
-  .o-b-why-container {
+@media screen and (min-width: 1208px) {
+  .p-w-why-container {
     width: 1440px;
+    height: 911px;
     padding: 80px 160px;
+    background-image: url("/img/How\ It\ Works\ \(1\).png");
   }
-  .o-b-why-list {
-    padding-top: 48px;
+  .p-w-why-list {
+    padding-top: 64px;
     display: flex;
     flex-direction: row;
     gap: 32px;
   }
-  .o-b-why-item {
+  .p-w-why-item {
     width: 352px;
-    height: 330px;
+  }
+  .p-w-why-text-bold {
+    font-family: M PLUS 1 Code;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+  .p-w-why-text {
+    font-family: M PLUS 1 Code;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+}
 
-    border-radius: 16px;
-    padding: 32px;
-    gap: 8px;
+.p-w-reviews-container {
+  margin: auto;
+  padding: 60px 16px;
+  width: 375px;
+  height: 448px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/CTA.png");
+}
+
+.p-w-reviews-text-bold {
+  font-family: M PLUS 1 Code;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 36px;
+  leading-trim: NONE;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.p-w-reviews-text {
+  font-family: M PLUS 1 Code;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 16px 0 64px;
+}
+
+@media screen and (min-width: 1208px) {
+  .p-w-reviews {
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/img/CTA\ \(1\).png");
+  }
+  .p-w-reviews-container {
+    margin: auto;
+    padding: 80px 352px;
+    width: 1440px;
+    height: 487px;
+    background-image: none;
   }
 
-  .o-b-why-text {
-    font-family: Maven Pro;
+  .p-w-reviews-text-bold {
+    font-family: M PLUS 1 Code;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 56px;
+    leading-trim: NONE;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .p-w-reviews-text {
+    font-family: M PLUS 1 Code;
     font-weight: 500;
     font-style: Medium;
     font-size: 28px;
     leading-trim: NONE;
     line-height: 130%;
     letter-spacing: 0%;
+    text-align: center;
+    padding: 16px 0 48px;
   }
-  .o-b-why-text-two {
-    font-family: Maven Pro;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 18px;
-    leading-trim: NONE;
-    line-height: 150%;
-    letter-spacing: 0%;
-  }
-}
-
-.o-b-reviews {
-  margin: auto;
-  background: #620c08;
-}
-.o-b-reviews-container {
-  margin: auto;
-  padding: 60px 16px;
-  width: 375px;
-}
-.o-b-reviews-list {
-  padding-top: 48px;
-}
-
-.o-b-reviews-item {
-  margin: 0 8px;
-  width: 300px;
-  height: 227px;
-}
-
-.o-b-reviews-item-top {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-}
-.o-b-reviews-img {
-  height: 14px;
-}
-.o-b-reviews-text-bold {
-  font-family: Maven Pro;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 18px;
-  leading-trim: NONE;
-  line-height: 150%;
-  letter-spacing: 0%;
-  color: #ff7f00;
-}
-
-.o-b-reviews-text {
-  font-family: Maven Pro;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 16px;
-  leading-trim: NONE;
-  line-height: 150%;
-  letter-spacing: 0%;
-  padding-top: 8px;
-}
-
-@media screen and (min-width: 1203px) {
-  .o-b-reviews-container {
+  .p-w-home-link-two {
     margin: auto;
-    padding: 80px 160px;
-    width: 1440px;
-  }
-  .o-b-reviews-list {
-    padding-top: 48px;
-  }
-
-  .o-b-reviews-item {
-    margin: 0 16px;
-    width: 352px;
-    height: 227px;
-  }
-
-  .o-b-reviews-img {
-    height: 15px;
-  }
-  .o-b-reviews-text-bold {
-    font-family: Maven Pro;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 20px;
-    leading-trim: NONE;
-    line-height: 150%;
-    letter-spacing: 0%;
-  }
-
-  .o-b-reviews-text {
-    font-family: Maven Pro;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 18px;
-    leading-trim: NONE;
-    line-height: 150%;
-    letter-spacing: 0%;
-
-    padding-top: 8px;
   }
 }
 
-.o-b-faq-container {
+.p-w-faq-container {
   padding: 60px 16px;
   width: 375px;
   margin: auto;
 }
-.o-b-faq-list {
+.p-w-faq-list {
   padding-top: 48px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.o-b-faq-item {
+.p-w-faq-item {
   border-radius: 16px;
-  padding: 16px;
+  padding: 15px;
+  border: 1px solid #0a070f;
+  background: #ebfefe;
 }
 
-.o-b-faq-question {
+.p-w-faq-question {
   display: flex;
+  align-items: start;
   justify-content: space-between;
-  align-items: center;
-  font-family: Maven Pro;
+  font-family: M PLUS 1 Code;
   font-weight: 500;
   font-style: Medium;
-  font-size: 24px;
+  font-size: 18px;
   leading-trim: NONE;
-  line-height: 130%;
+  line-height: 150%;
+  color: #1d0d3d;
   letter-spacing: 0%;
-  color: #fedc82;
 }
 
-.o-b-faq-answer {
-  font-family: Maven Pro;
+.p-w-faq-answer {
+  font-family: M PLUS 1 Code;
   font-weight: 400;
   font-style: Regular;
   font-size: 16px;
   leading-trim: NONE;
   line-height: 150%;
   letter-spacing: 0%;
+  color: #0a070f;
 }
-.o-b-toggle-button {
+.p-w-toggle-button {
   background: none;
   border: none;
   cursor: pointer;
 }
 
-.o-b-toggle-button img {
+.p-w-toggle-button img {
   width: 28px;
   transition: transform 0.3s ease;
 }
-.o-b-faq-answer {
+.p-w-faq-answer {
   max-height: 0;
   overflow: hidden;
   transition:
@@ -731,45 +701,51 @@ a {
   opacity: 0;
 }
 
-.o-b-faq-answer.open {
+.p-w-faq-answer.open {
   max-height: 200px;
   opacity: 1;
   padding-top: 16px;
 }
 
-.o-b-toggle-button img.rotated {
+.p-w-toggle-button img.rotated {
   transform: rotate(180deg);
 }
-@media screen and (min-width: 1203px) {
-  .o-b-faq-container {
+@media screen and (min-width: 1208px) {
+  .p-w-faq-container {
     padding: 80px 160px;
     width: 1440px;
     margin: auto;
+    background-image: url("/img/FAQ.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 649px;
   }
-  .o-b-faq-list {
-    padding-top: 48px;
+  .p-w-faq-list {
+    padding-top: 64px;
     display: flex;
     flex-direction: column;
+    width: 736px;
+    margin-left: auto;
     gap: 16px;
   }
 
-  .o-b-faq-item {
+  .p-w-faq-item {
     border-radius: 16px;
     padding: 16px;
   }
 
-  .o-b-faq-question {
-    font-family: Maven Pro;
+  .p-w-faq-question {
+    font-family: M PLUS 1 Code;
     font-weight: 500;
     font-style: Medium;
-    font-size: 28px;
+    font-size: 20px;
     leading-trim: NONE;
-    line-height: 130%;
+    line-height: 150%;
     letter-spacing: 0%;
   }
 
-  .o-b-faq-answer {
-    font-family: Maven Pro;
+  .p-w-faq-answer {
+    font-family: M PLUS 1 Code;
     font-weight: 400;
     font-style: Regular;
     font-size: 18px;
@@ -778,35 +754,28 @@ a {
     letter-spacing: 0%;
   }
 }
-.o-b-policy-terms-container {
+.p-w-policy-terms-container {
   padding: 120px 16px 40px;
   width: 375px;
   margin: auto;
-  color: #000000;
-  font-family: Maven Pro;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 16px;
-  leading-trim: NONE;
-  line-height: 150%;
-  letter-spacing: 0%;
-  text-decoration: none;
+  color: #0a070f;
+  font-family: "M PLUS 1 Code", monospace;
 }
 
-.o-b-policy-terms-container h1 {
+.p-w-policy-terms-container h1 {
   text-transform: uppercase;
   margin-bottom: 20px;
-  font-family: Maven Pro;
-  font-weight: 700;
-  font-style: Bold;
+  font-family: M PLUS 1 Code;
+  font-weight: 600;
+  font-style: SemiBold;
   font-size: 36px;
   leading-trim: NONE;
   line-height: 120%;
   letter-spacing: 0%;
 }
-.o-b-policy-terms-container h3 {
+.p-w-policy-terms-container h2 {
   margin: 20px 0;
-  font-family: Maven Pro;
+  font-family: M PLUS 1 Code;
   font-weight: 500;
   font-style: Medium;
   font-size: 24px;
@@ -814,20 +783,20 @@ a {
   line-height: 130%;
   letter-spacing: 0%;
 }
-.o-b-policy-terms-container ul {
+.p-w-policy-terms-container ul {
   list-style-type: disc;
   margin-left: 20px;
 }
-.o-b-policy-terms-container a {
+.p-w-policy-terms-container a {
   text-decoration: none;
   color: #000000;
 }
 
-@media screen and (min-width: 1203px) {
-  .o-b-policy-terms-container {
+@media screen and (min-width: 1208px) {
+  .p-w-policy-terms-container {
     padding: 140px 160px 80px;
     width: 1440px;
-    font-family: Maven Pro;
+    font-family: M PLUS 1 Code;
     font-weight: 400;
     font-style: Regular;
     font-size: 18px;
@@ -835,17 +804,17 @@ a {
     line-height: 150%;
     letter-spacing: 0%;
   }
-  .o-b-policy-terms-container h1 {
-    font-family: Maven Pro;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 48px;
+  .p-w-policy-terms-container h1 {
+    font-family: M PLUS 1 Code;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 56px;
     leading-trim: NONE;
     line-height: 120%;
     letter-spacing: 0%;
   }
-  .o-b-policy-terms-container h3 {
-    font-family: Maven Pro;
+  .p-w-policy-terms-container h3 {
+    font-family: M PLUS 1 Code;
     font-weight: 500;
     font-style: Medium;
     font-size: 28px;
@@ -855,70 +824,73 @@ a {
   }
 }
 
-.o-b-footer-container {
+.p-w-footer-container {
   width: 375px;
-  padding: 40px 16px;
+  padding: 40px 16px 16px;
   margin: auto;
   display: flex;
   flex-direction: column;
 
   gap: 40px;
+  color: #ebfefe;
 }
 
-.o-b-footer-wrapper {
+.p-w-footer-wrapper {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.o-b-footer-text {
+.p-w-footer-text {
   text-decoration: none;
   color: inherit;
-  font-family: Maven Pro;
+  font-family: M PLUS 1 Code;
   font-weight: 400;
   font-style: Regular;
   font-size: 16px;
   leading-trim: NONE;
   line-height: 150%;
   letter-spacing: 0%;
+  text-align: center;
 }
 
-.o-b-footer-copyright {
-  font-family: Maven Pro;
+.p-w-footer-copyright {
+  font-family: M PLUS 1 Code;
   font-weight: 400;
   font-style: Regular;
   font-size: 11px;
   leading-trim: NONE;
   line-height: 150%;
   letter-spacing: 0%;
-  text-align: right;
+  text-align: center;
 }
 
-@media screen and (min-width: 1203px) {
-  .o-b-footer-container {
+@media screen and (min-width: 1208px) {
+  .p-w-footer-container {
     width: 1440px;
-    padding: 40px 160px;
+
     gap: 40px;
   }
 
-  .o-b-footer-text {
-    font-family: Maven Pro;
+  .p-w-footer-text {
+    font-family: M PLUS 1 Code;
     font-weight: 400;
     font-style: Regular;
     font-size: 18px;
     leading-trim: NONE;
     line-height: 150%;
     letter-spacing: 0%;
+    text-align: center;
   }
 
-  .o-b-footer-copyright {
-    font-family: Maven Pro;
+  .p-w-footer-copyright {
+    font-family: M PLUS 1 Code;
     font-weight: 400;
     font-style: Regular;
     font-size: 12px;
     leading-trim: NONE;
     line-height: 150%;
     letter-spacing: 0%;
-    text-align: right;
+    text-align: center;
   }
 }
